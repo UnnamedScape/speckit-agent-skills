@@ -106,6 +106,9 @@ description: Complete description including what the skill does and when to use 
    - Remove `## User Input` section with `$ARGUMENTS` block.
    - Remove `handoffs` from frontmatter (move to prose).
    - Remove `/command.name` references (use skill names instead).
+   - Remove `## Pre-Execution Checks` and `## Post-Execution Checks` sections
+     (`.specify/extensions.yml` hook machinery — interactive-runtime only; no
+     effect in skill mode).
 
 7. **Validate skill structure**:
    - Frontmatter has `name` and `description` only.
@@ -129,6 +132,8 @@ description: Complete description including what the skill does and when to use 
 | `agent: foo.bar`              | `foo-bar` skill reference                     |
 | `description:` in frontmatter | `description:` expanded with triggers         |
 | Inline `## User Input`        | Removed; documented in Inputs                 |
+| `## Pre-Execution Checks`     | Removed (extension-hook framework, interactive-only) |
+| `## Post-Execution Checks`    | Removed (extension-hook framework, interactive-only) |
 
 ## Example Conversion
 

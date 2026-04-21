@@ -2,6 +2,13 @@
 
 Agent skills for [Spec Kit](https://github.com/github/spec-kit)
 
+## About this fork
+
+UnnamedScape fork of [dceoy/speckit-agent-skills](https://github.com/dceoy/speckit-agent-skills). Policy deltas:
+
+- `claude-command-converter` is extended to strip `## Pre-Execution Checks` / `## Post-Execution Checks` sections (the `.specify/extensions.yml` hook framework is interactive-runtime-only and does not apply when the Spec Kit commands are consumed as skills).
+- Otherwise tracks upstream. Non-policy patches should be PR'd upstream to dceoy first.
+
 ## Overview
 
 This repository provides reusable skills and templates for multiple agent runtimes:
